@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comidas Tradicionales</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .submenu:hover #carrito {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900 font-poppins">
+    <header class="bg-white shadow py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-green-500 uppercase"></a>
+            <input type="checkbox" id="menu" class="hidden" />
+            <label for="menu" class="cursor-pointer md:hidden block">
+                <img src="/imagenes/menu.png" class="w-6 h-6" alt="menu">
+            </label>
+            <nav class="hidden md:flex space-x-4">
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="hover:text-gray-600">Inicio</a></li>
+                    <li><a href="#" class="hover:text-gray-600">Servicio</a></li>
+                    <li><a href="#" class="hover:text-gray-600">Producto</a></li>
+                    <li><a href="#" class="hover:text-gray-600">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="relative">
+                <img src="/imagenes/car.svg" id="img-carrito" class="w-6 h-6 cursor-pointer" alt="carrito">
+                <div id="carrito" class="absolute right-0 mt-2 w-48 bg-white shadow-lg rounded p-4 hidden">
+                    <table id="lista-carrito" class="w-full">
+                        <thead>
+                            <tr>
+                                <th>Imagen</th>
+                                <th>Nombre</th>
+                                <th>Precio</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                    <a href="#" id="vaciar-carrito" class="mt-2 bg-red-500 text-white py-2 px-4 rounded hover:bg-red-700 block text-center">Vaciar Carrito</a>
+                </div>
+            </div>
+        </div>
+    </header>
+  
+
+    <section class="bg-gray-200 py-12 flex items-center justify-center header">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+            <div class="mb-8 md:mb-0 text-center md:text-left">
+                <span class="text-xl text-gray-600">Ofertas</span>
+                <h1 class="text-4xl font-bold mb-4">Comidas Típicas de la región</h1>
+                <p class="text-lg">
+                    Descubre los sabores auténticos de nuestra región Amazónica en Trinidad - Beni - Bolivia con nuestras comidas típicas.
+                </p>
+                <a href="#" class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700">Información</a>
+            </div>
+            <div class="flex justify-center">
+                <img src="/imagenes/RepresentacionLogo.png" class="w-64 h-64 object-cover" alt="">
+            </div>
+        </div>
+    </section>
+    
+    <section class="container mx-auto py-12">
+        <div class="grid md:grid-cols-3 gap-8 text-center">
+            <div>
+                <img src="/imagenes/i1.svg" class="w-20 h-20 mx-auto" alt="">
+                <h3 class="text-2xl font-bold mt-4">Loren ipsum</h3>
+                <p>Voluptatum</p>
+            </div>
+            <div>
+                <img src="/imagenes/i2.svg" class="w-20 h-20 mx-auto" alt="">
+                <h3 class="text-2xl font-bold mt-4">Loren ipsum</h3>
+                <p>Voluptatum</p>
+            </div>
+            <div>
+                <img src="/imagenes/i3.svg" class="w-20 h-20 mx-auto" alt="">
+                <h3 class="text-2xl font-bold mt-4">Loren ipsum</h3>
+                <p>Voluptatum</p>
+            </div>
+        </div>
+
+    <main class="container mx-auto py-12" id="lista-1">
+        <h2 class="text-3xl font-bold mb-8 text-center">Platos y Bebidas Tradicionales</h2>
+        <div class="grid md:grid-cols-3 gap-8 text-center">
+            <div class="product">
+                <img src="/imagenes/Completo.png" class="w-32 h-32 mx-auto object-cover" alt="">
+                <div class="mt-4">
+                    <h3 class="text-2xl font-bold">Tablita Completa</h3>
+                    <p>La Tablita Completa especialidad de la casa contiene nuestro delicioso Charque frito, Queperi y Costilla Frita Acompañado por Plátano verde, Yuca y Guarnición de arroz</p>
+                    <a href="#" class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700 agregar-carrito">Agregar</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="/imagenes/majadito.png" class="w-32 h-32 mx-auto object-cover" alt="">
+                <div class="mt-4">
+                    <h3 class="text-2xl font-bold">Majadito de Charque</h3>
+                    <p>Nuestro delicioso Majadito, disfruta de este arroz sazonado con carne, plátano frito, huevo y especias.</p>
+                    <a href="#" class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700 agregar-carrito">Agregar</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="/imagenes/MasacoBife.png" class="w-32 h-32 mx-auto object-cover" alt="">
+                <div class="mt-4">
+                    <h3 class="text-2xl font-bold">Masaco con Bife y huevo</h3>
+                    <p>Les ofrecemos nuestro delicioso Masaco con Bife y Huevo, una exquisita comida típica de los benianos.</p>
+                    <a href="#" class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700 agregar-carrito">Agregar</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="/imagenes/pandearroz.png" class="w-32 h-32 mx-auto object-cover" alt="">
+                <h3 class="text-2xl font-bold mt-4">Pandearroz</h3>
+                <p>Deliciosas masitas benianas</p>
+                <a href="#" class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700 agregar-carrito">Agregar</a>
+            </div>
+            <div class="product">
+                <img src="/imagenes/tamal.png" class="w-32 h-32 mx-auto object-cover" alt="">
+                <h3 class="text-2xl font-bold mt-4">Tamal</h3>
+                <p>Deliciosas masitas benianas</p>
+                <a href="#" class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700 agregar-carrito">Agregar</a>
+            </div>
+            <div class="product">
+                <img src="/imagenes/chicha.png" class="w-32 h-32 mx-auto object-cover" alt="">
+                <h3 class="text-2xl font-bold mt-4">Chicha de maíz</h3>
+                <p>Refrescante bebida de nuestra región</p>
+                <a href="#" class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700 agregar-carrito">Agregar</a>
+            </div>
+            <div class="product">
+                <img src="/imagenes/somo.png" class="w-32 h-32 mx-auto object-cover" alt="">
+                <h3 class="text-2xl font-bold mt-4">Somo</h3>
+                <p>Refrescante bebida de nuestra región</p>
+                <a href="#" class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700 agregar-carrito">Agregar</a>
+            </div>
+        </div>
+    </main>
+
+    <section class="container mx-auto py-12">
+        <h2 class="text-3xl font-bold mb-8 text-center">Contáctanos</h2>
+        <form class="bg-gray-100 p-6 rounded shadow-md max-w-lg mx-auto">
+            <input type="text" placeholder="Nombre" class="mb-4 block w-full rounded border-gray-300 shadow-sm">
+            <input type="text" placeholder="Apellido" class="mb-4 block w-full rounded border-gray-300 shadow-sm">
+            <input type="email" placeholder="Gmail" class="mb-4 block w-full rounded border-gray-300 shadow-sm">
+            <input type="submit" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700 block w-full cursor-pointer" value="Enviar">
+        </form>
+    </section>
+    
+    <script src="/java/principal.js"></script>
+</body>
+</html>
